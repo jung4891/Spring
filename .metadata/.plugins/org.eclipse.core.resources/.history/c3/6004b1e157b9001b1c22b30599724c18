@@ -1,0 +1,15 @@
+package com.hyuk.project_1;
+
+public class Stu {
+	int idx;
+	String name;
+	int score;
+	
+	Stu(){}
+	
+	Stu(String name, int score) {
+		this.name = name;
+		this.score = score;
+	}
+	
+}

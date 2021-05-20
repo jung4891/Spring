@@ -1,0 +1,27 @@
+@charset "EUC-KR";
+
+.wrap {     /* wrap은 블록속성에만 적용됨 */
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;  
+    border: 1px solid #ccc;
+}
+
+a {
+    display: inline-block;  /* 인라인 속성인 a태그에 블록속성도 추가함 */
+    width: 100%;
+    box-sizing: border-box; /* 여백까지 합쳐서 넓이가 책정됨. 주석시 100% 넘어감*/
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background: #f1f1f1;
+    border: 1px solid #a1a1a1;
+    text-align: center;
+    text-decoration: none;  /* 접속시 밑줄 생기는데 안생기게 함.*/
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    background: #999;
+}

@@ -1,0 +1,21 @@
+
+
+# jsp파일 utf-8 설정 (상단에 복붙)
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+# sqlite  설정 (pom.xml에서 120번줄. </dependencies> 위에, Test 밑에 복붙)
+		<!-- sqlite -->
+		<dependency>
+		    <groupId>org.xerial</groupId>
+		    <artifactId>sqlite-jdbc</artifactId>
+		    <version>3.34.0</version>
+		</dependency>
+		
+		
+# main.jsp에 css파일 설정하기
+    <link rel="stylesheet" type="text/css" media="screen" 
+    		href='${pageContext.request.contextPath}/resources/main.css'>
+		
+		
+# Alt + Shife + Q + P > 패키지 탐색창 열기뻬

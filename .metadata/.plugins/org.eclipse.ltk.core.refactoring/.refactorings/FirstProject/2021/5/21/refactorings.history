@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DBCommon.java&apos; to &apos;Project_0511/src/main/java/com.hyuk.firstproject&apos;&#x0D;&#x0A;- Original project: &apos;FirstProject&apos;&#x0D;&#x0A;- Destination element: &apos;Project_0511/src/main/java/com.hyuk.firstproject&apos;&#x0D;&#x0A;- Original element: &apos;com.kopo.firstproject.DBCommon.java&apos;" description="Copy compilation unit" destination="=Project_0511/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hyuk.firstproject" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kopo.firstproject{DBCommon.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1621505728039" units="1" version="1.0"/>
+</session>
