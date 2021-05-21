@@ -1,6 +1,6 @@
 
 
-# home.jsp파일 utf-8 설정 (상단에 복붙)
+# main.jsp파일 utf-8 설정 (상단에 복붙)
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 

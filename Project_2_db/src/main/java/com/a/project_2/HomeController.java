@@ -43,7 +43,6 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/insert_action", method = RequestMethod.GET)
-	
 	public String insertAct(@RequestParam("name") String name, 
 			@RequestParam("middle") int mid, @RequestParam("final") int fin, Model model) {
 	

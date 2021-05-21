@@ -17,6 +17,8 @@
                 <th>idx</th><th>이름</th><th>점수</th><th>생성일</th>
             </thead>
             <tbody>
+            	${list }
+            <!--  
                 <tr>
                     <td>1</td><td>송혁중</td><td>100</td><td>2021-05-18</td>
                 </tr>
@@ -26,9 +28,11 @@
                 <tr>
                     <td>3</td><td>hyuk</td><td>80</td><td>2021-05-20</td>
                 </tr>
-                
+            -->    
             </tbody>
         </table>
     </section>
+    
+    <input>
 </body>
 </html>

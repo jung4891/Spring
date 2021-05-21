@@ -1,6 +1,9 @@
 package com.a.project_3;
 
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -44,15 +47,39 @@ public class HomeController {
 	
 	@RequestMapping(value = "/insert_action", method = RequestMethod.GET)
 	public String insertAct(@RequestParam("student_name") String name,
-			@RequestParam("score") int score, Model model) {
+			@RequestParam("score") String scoreStr, Model model) {
+		int score = Integer.parseInt(scoreStr);  // 서버는 String으로 값을 받아온다. 그래야 오류가 안난다고 하심
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String now = sdf.format(Calendar.getInstance().getTime());
 		DBCommon<Student> db = new DBCommon<Student>("c:/tomcat/0520.db", "student");
-		db.insertData(new Student(name, score, "2021-05-20"));
+		db.insertData(new Student(name, score, now));
 		model.addAttribute("message",  "데이터가 정상 입력됨@@@ ^_^");
 		return "message";
 	}
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String create(Locale locale, Model model) {  
+		DBCommon<Student> db = new DBCommon<Student>("c:/tomcat/0520.db", "student");
+		ArrayList<Student> students =  db.selectArrayList(new Student());
+		
+		String htmlString = "";
+		for (int i=0; i<students.size(); i++) {
+			htmlString += "<tr>";
+			htmlString += "<td>";
+			htmlString += students.get(i).idx;
+			htmlString += "</td>";
+			htmlString += "<td>";
+			htmlString += students.get(i).name;
+			htmlString += "</td>";
+			htmlString += "<td>";
+			htmlString += students.get(i).score;
+			htmlString += "</td>";
+			htmlString += "<td>";
+			htmlString += students.get(i).create_date;
+			htmlString += "</td>";
+			htmlString += "</tr>";
+		}
+		model.addAttribute("list", htmlString);
 		return "list";
 	}
 	

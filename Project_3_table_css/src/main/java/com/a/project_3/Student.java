@@ -5,17 +5,17 @@ public class Student {
 	int idx;
 	String name;
 	int score;
-	String creat_date;
+	String create_date;
 	
 	Student(){
 		
 	}
 	
-	public Student(String name, int score, String creat_date) {
+	public Student(String name, int score, String create_date) {
 		super();
 		this.name = name;
 		this.score = score;
-		this.creat_date = creat_date;
+		this.create_date = create_date;
 	}
 
 }
