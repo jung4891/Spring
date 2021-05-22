@@ -14,7 +14,11 @@
         <p style="padding: 20px; background: #eee; border-radius: 5px; text-align: center;">
             ${msg }
         </p> <br>
-        <a href="/project_3" style="font-size: large; margin-left: 85%;">홈으로</a>
+        <span>
+        	<a href="/project_3/insert" style="font-size: large; margin-left: 80%;">추가 입력</a> <br><br>
+        	<a href="/project_3" style="font-size: large; margin-left: 80%;">홈으로</a>
+        </span>
+
     </section>
 </body>
 </html>

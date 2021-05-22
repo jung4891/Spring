@@ -13,10 +13,8 @@
 <body>
     <section class="wrap">
         <a href="create_table">테이블 생성</a>
-        <a href="insert">데이터 입력</a>
+        <a href="insert">데이터 입력</a> 
         <a href="list">목록보기</a>
-
-
     </section>
 </body>
 </html>

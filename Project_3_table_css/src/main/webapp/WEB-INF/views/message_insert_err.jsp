@@ -12,8 +12,9 @@
 <body>
     <section class="wrap" style="width: 60%; margin: 0 auto; padding: 50px;">
         <p style="padding: 20px; background: #eee; border-radius: 5px; text-align: center;">
-            ${message }
-        </p>
+            ${msg }
+        </p> <br>
+        <a href="/project_3/insert" style="font-size: large; margin-left: 80%;">다시 입력</a>
     </section>
 </body>
 </html>

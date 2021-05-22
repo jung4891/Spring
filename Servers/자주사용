@@ -1,8 +1,6 @@
 
 
-# main.jsp파일 utf-8 설정 (상단에 복붙)
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+## 프로젝트 관련
 
 # sqlite  설정 (pom.xml에서 120번줄. </dependencies> 위에, Test 밑에 복붙)
 		<!-- sqlite -->
@@ -11,11 +9,22 @@
 		    <artifactId>sqlite-jdbc</artifactId>
 		    <version>3.34.0</version>
 		</dependency>
-		
+
+
+# main.jsp파일 utf-8 설정 (상단에 복붙)
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 		
 # main.jsp에 css파일 설정하기(title 바로 밑에)
     <link rel="stylesheet" type="text/css" media="screen" 
     		href='${pageContext.request.contextPath}/resources/main.css'>
 		
+	
+	
+	
+## 클래스 관련	
 		
-# Alt + Shife + Q + P > 패키지 탐색창 열기뻬
+# 현재 날짜와 시간정보 가져오기
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+String now = sdf.format(Calendar.getInstance().getTime());
+

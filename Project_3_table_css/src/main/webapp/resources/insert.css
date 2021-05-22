@@ -1,6 +1,6 @@
 
 .wrap {     
-    width: 90%;
+    width: 40%;
     margin: 0 auto;  
     padding: 20px 0px;  
 }
@@ -21,7 +21,7 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 40%;
     line-height: 2em;  /*현재 글자크기의 2배*/
     height: 2em;
 }
@@ -34,5 +34,8 @@ input[type="submit"] {
     color: #fff;
     border: none;
     padding: 10px;
-    height: 4em;
+    height: 3em;
+    font-size: large; 
+    font-weight: bold;
+    border-radius: 15px;
 }

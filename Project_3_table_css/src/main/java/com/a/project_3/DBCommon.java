@@ -76,7 +76,8 @@ public class DBCommon<T> {
 			int result = statement.executeUpdate(query);
 			statement.close();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			// e.printStackTrace();
+			System.out.println("이미 테이블이 존재함. 이거를 message페이지에 띄울 방법은??");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -249,5 +250,42 @@ public class DBCommon<T> {
 			}
 		}
 		return returnString;
+	}
+	
+	// update때 교수님이 추가하신 부분
+	public T detailsData(T t, int idx) {
+		T selectData = null;
+		try {
+			Class<?> dataClass = t.getClass();
+			Field[] dataClassFields = dataClass.getDeclaredFields();
+			this.dataList = new ArrayList<T>();
+
+			if (this.connection == null) {
+				this.open();
+			}
+			String query = "SELECT * FROM " + this.tableName + " WHERE idx=" + idx + ";";
+			PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				selectData = (T) dataClass.getDeclaredConstructor().newInstance();
+				for (Field field : dataClassFields) {
+					String fieldType = field.getType().toString();
+					String fieldName = field.getName();
+					if (fieldType.matches("int")) {
+						field.setInt(selectData, resultSet.getInt(fieldName));
+					} else {
+						field.set(selectData, resultSet.getString(fieldName));
+					}
+				}
+			}
+			preparedStatement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			this.close();
+		}
+		return selectData;
 	}
 }

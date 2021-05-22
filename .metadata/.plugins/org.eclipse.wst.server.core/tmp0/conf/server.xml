@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_3_table_css" path="/project_3" reloadable="true" source="org.eclipse.jst.jee.server:Project_3_table_css"/><Context docBase="C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_0521" path="/project_0521" reloadable="true" source="org.eclipse.jst.jee.server:Project_0521"/></Host>
+      <Context docBase="C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_3_table_update_delete" path="/project_3" reloadable="true" source="org.eclipse.jst.jee.server:Project_3_table_update_delete"/></Host>
     </Engine>
   </Service>
 </Server>

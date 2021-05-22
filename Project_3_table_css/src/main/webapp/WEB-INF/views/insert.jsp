@@ -17,11 +17,15 @@
             <label> 이름 입력: 
                 <input type="text" name="student_name" placeholder="이름">
             </label>
-            <label> 점수 입력: 
-                <input type="number" name="score" placeholder="점수">
+            <label> 중간고사 성적: 
+                <input type="number" name="midScore" placeholder="중간점수">
             </label>
+            <label> 기말고사 성적: 
+                <input type="number" name="finScore" placeholder="기말점수">
+            </label>       
             <input type="submit" value="입력 완료">
         </form>
     </section>
+    <a href="/project_3" style="font-size: large; font-weight: bold; margin-left: 60%;">홈으로</a>
 </body>
 </html>
