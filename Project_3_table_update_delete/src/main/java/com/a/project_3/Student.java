@@ -4,9 +4,9 @@ public class Student {
 	
 	int idx;
 	String name;
-	double midScore;
-	double finScore;
-	double totalScore;
+	int midScore;
+	int finScore;
+	int totalScore;
 	String create_date;
 	
 	Student(){
@@ -14,7 +14,7 @@ public class Student {
 	}
 	
 	// DBCommon에서 idx 자동증가하도록 처리해놓음~
-	public Student(String name, double mid, double fin, String create_date) {
+	public Student(String name, int mid, int fin, String create_date) {
 		super();
 		this.name = name;
 		this.midScore = mid;
@@ -23,7 +23,7 @@ public class Student {
 		this.create_date = create_date;
 	}
 	
-	public Student(int idx, String name, double mid, double fin, String create_date) {
+	public Student(int idx, String name, int mid, int fin, String create_date) {
 		this.idx = idx;
 		this.name = name;
 		this.midScore = mid;

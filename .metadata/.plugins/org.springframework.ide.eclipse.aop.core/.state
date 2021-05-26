@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="Project_1_basic"/>
+<aop-project name="Project_4_table_myDB"/>
 <aop-project name="Project_2_db_insert"/>
 <aop-project name="Project_3_table_update_delete"/>
 </aop-reference-model>
