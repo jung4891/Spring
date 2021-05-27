@@ -61,10 +61,10 @@ public class DBCommon<T> {
 				if (fieldName.matches("idx") && fieldType.matches("int")) {
 					query = query + fieldName + " INTEGER PRIMARY KEY AUTOINCREMENT";
 				} else if (fieldType.matches("int")) {
-					query = query + fieldName + " INTEGER";
-				} else if (fieldType.matches("(double|float)")) {
+					query = query + fieldName + " INTEGER";	// 기본타입은 그냥 떨어짐
+				} else if (fieldType.matches("(double|float)")) { // 정규표현식이라 | 하나만 씀
 					query = query + fieldName + " REAL";
-				} else if (fieldType.matches(".*String")) {
+				} else if (fieldType.matches(".*String")) {	// 객체타입은 .*로 떨어짐
 					query = query + fieldName + " TEXT";
 				} 
 			}
