@@ -76,7 +76,8 @@ public class HomeController {
 		model.addAttribute("name", emp.name);
 		model.addAttribute("birthday", emp.birthday);
 		model.addAttribute("address", emp.address);
-		}
+		} 
+		System.out.println(model.toString());
 		return "update";
 	}
 	
@@ -91,7 +92,10 @@ public class HomeController {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String now = sdf.format(Calendar.getInstance().getTime());
 		Member m  = new Member(id, pwd, name, birthday, address, now, now);
+		m.idx = idx;
+		System.out.println(m.toString());
 		boolean isSuccess =  db.updateData(m);
+		System.out.println(isSuccess);
 		if (isSuccess) {			
 			model.addAttribute("msg", name + " 님의 데이터가 수정되었습니다~~");
 		} else {

@@ -22,6 +22,14 @@ public class Member {
 		this.created = created;
 		this.updated = updated;
 	}
+
+	@Override
+	public String toString() {
+		return "Member [idx=" + idx + ", id=" + id + ", pwd=" + pwd + ", name=" + name + ", birthday=" + birthday
+				+ ", address=" + address + ", created=" + created + ", updated=" + updated + "]";
+	}
+	
+	
 	
 
 }

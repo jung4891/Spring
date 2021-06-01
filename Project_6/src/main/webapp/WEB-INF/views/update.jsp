@@ -27,7 +27,7 @@
             <label> 주소: 
                 <input type="text" name="address" value="${address }">
             </label>    
-            <input type="submit" value="입력 완료">
+            <input type="submit" value="수정 완료">
         </form>
         <div style="font-size:large; font-weight:bold; text-align: right;"> <br>
        	<a href="/project_6/show_list" >목록보기</a> &nbsp;

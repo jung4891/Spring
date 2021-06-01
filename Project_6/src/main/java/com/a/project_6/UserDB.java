@@ -22,7 +22,7 @@ public class UserDB {
 							"id TEXT, pwd TEXT,name TEXT, birthday TEXT, address TEXT, created TEXT, updated TEXT)";
 			Statement stmt = con.createStatement();	
 			int result = stmt.executeUpdate(query);	// 실행되면 0이 반환됨 (DDL - CREATE)
-			System.out.println(result);				// 이미 테이블 존재하변 바로 catch로 빠짐
+			// System.out.println(result);				// 이미 테이블 존재하변 바로 catch로 빠짐
 			stmt.close();							
 			con.close();							
 		} catch (Exception e) {
@@ -33,17 +33,21 @@ public class UserDB {
 		
 	}
 	
-	public String sha256(String msg) {
+	// 패스워드 해쉬화
+	public static String sha256(String msg) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-256");
+			// System.out.println(md);				SHA-256 Message Digest from SUN, <initialized>
 			md.update(msg.getBytes());
-			
-			StringBuilder builder = new StringBuilder();
+			// System.out.println(md);				SHA-256 Message Digest from SUN, <in progress>
+			// System.out.println(md.digest());		[B@c39f790
+			StringBuilder sb = new StringBuilder();
 			for (byte b: md.digest()) {
-				builder.append(String.format("%02x", b));
+				// System.out.println(b);							107
+				// System.out.println(String.format("%02x", b));	6b
+				sb.append(String.format("%02x", b));
 			}
-			return builder.toString();
-			
+			return sb.toString();		// 6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "";
@@ -63,8 +67,8 @@ public class UserDB {
 						   "', '" + m.address + "', '"  + m.created + "', '"  + m.updated + "') ";					
 			
 			Statement stmt = con.createStatement();	
-			int result = stmt.executeUpdate(query);		// 실행되면 적용된 row수(1) 반환됨			
-			// System.out.println("result: " +result);		// (DML - INSERT, UPDATE, DELETE)
+			int result = stmt.executeUpdate(query);			// 실행되면 적용된 row수(1) 반환됨			
+			// System.out.println("result: " +result);		(DML - INSERT, UPDATE, DELETE)
 			if (result < 1) {
 				return false;
 			}
@@ -100,7 +104,7 @@ public class UserDB {
 				resStr += "<tr>";
 				resStr += "<td>" + idx + "</td>" + 
 							"<td>" + id + "</td>" + 
-							"<td width=\"10%\">" + pwd + "</td>" + 
+							"<td>" + pwd + "</td>" + 
 							"<td>" + name + "</td>" + 
 							"<td>" + birthday + "</td>" + 
 							"<td>" + address + "</td>" + 
@@ -144,53 +148,36 @@ public class UserDB {
 		return oneData;
 	}
 	
-	public boolean insertData(Member m) {
+	public boolean updateData(Member m) {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			SQLiteConfig config = new SQLiteConfig();
 			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/Member.db", config.toProperties());
 			
-			// password hash(단방향) -> md5(옛날), sha256(이거를 주로 사용)
 			m.pwd = sha256(m.pwd);
-			String query = " INSERT INTO Member (id, pwd, name, birthday, address, created, updated) " + 
-						   " VALUES ('" + m.id + "', '" + m.pwd + "', '" + m.name + "', '" + m.birthday + 
-						   "', '" + m.address + "', '"  + m.created + "', '"  + m.updated + "') ";					
-			
-			Statement stmt = con.createStatement();	
-			int result = stmt.executeUpdate(query);		// 실행되면 적용된 row수(1) 반환됨			
-			// System.out.println("result: " +result);		// (DML - INSERT, UPDATE, DELETE)
+			String query = " UPDATE Member SET id=?, pwd=?, name=?, birthday=?, address=?, updated=? WHERE idx=? ";
+			PreparedStatement psmt = con.prepareStatement(query);
+			psmt.setString(1, m.id);		
+			psmt.setString(2, m.pwd);		
+			psmt.setString(3, m.name);		
+			psmt.setString(4, m.birthday);		
+			psmt.setString(5, m.address);			
+			psmt.setString(6, m.updated);		
+			psmt.setInt(7, m.idx);		
+			// 추가할때 번호순서 무조건 체크하도록!!!!
+			System.out.println(psmt);
+			int result = psmt.executeUpdate();
+			System.out.println(result);
 			if (result < 1) {
 				return false;
 			}
-			stmt.close();							
+			psmt.close();							
 			con.close();							
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
 		}
 		return true;
-	}
-	
-	public void updateData(int idx, String name, String gender, String address, String team) {
-		try {
-			Class.forName("org.sqlite.JDBC");
-			SQLiteConfig config = new SQLiteConfig();
-			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/staff.db", config.toProperties());
-			
-			String query = " UPDATE staffTable SET name=?, gender=?, address=?, team=? WHERE idx=? ";
-			PreparedStatement psmt = con.prepareStatement(query);
-			psmt.setString(1, name);		
-			psmt.setString(2, gender);		
-			psmt.setString(3, address);		
-			psmt.setString(4, team);		
-			psmt.setInt(5, idx);		
-			psmt.executeUpdate();
-			
-			psmt.close();							
-			con.close();							
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 	
 	public void deleteData(int idx) {

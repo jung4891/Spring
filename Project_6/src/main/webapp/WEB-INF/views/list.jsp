@@ -12,7 +12,7 @@
     <section class="wrap">
         <table style="table-layout: fixed">
             <thead>
-                <th>idx</th><th>아이디</th><th width="10%">비밀번호</th><th>이름</th><th>생년월일</th><th>주소</th><th>생성일</th><th>수정일</th><th></th><th></th>
+                <th>idx</th><th>아이디</th><th>비밀번호</th><th>이름</th><th>생년월일</th><th>주소</th><th>생성일</th><th>수정일</th><th></th><th></th>
             </thead>
             <tbody>  
             	${htmlList }

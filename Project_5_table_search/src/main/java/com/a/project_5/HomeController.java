@@ -58,7 +58,7 @@ public class HomeController {
 	@RequestMapping(value = "/update", method = RequestMethod.GET)
 	public String update(Model model,
 			@RequestParam("idx") int idx) {
-		Employee emp = db.selectOneData(idx);
+		 Employee emp = db.selectOneData(idx);
 		
 		if (emp != null) {			
 		model.addAttribute("idx", idx);
