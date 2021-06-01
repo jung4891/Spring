@@ -11,4 +11,5 @@
   <module moduleId="org.eclipse.jst.jee.server:Project_5" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Project_1_basic" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Project_2_db" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Project_6" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>
