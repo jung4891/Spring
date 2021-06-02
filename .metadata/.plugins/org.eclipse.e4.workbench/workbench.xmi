@@ -145,9 +145,10 @@
                   <tags>categoryTag:Java Browsing</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_S0bnELsUEeubz7Mdquol4w" containerData="6223" selectedElement="_1zMzqbk-EeuRIrpf1wDQYg">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_S0bnELsUEeubz7Mdquol4w" containerData="6223" selectedElement="_UEzCwbsUEeubz7Mdquol4w">
                 <children xsi:type="advanced:Placeholder" xmi:id="_1zMzqbk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.editorss" containerData="6341" ref="_1OZdcLk-EeuRIrpf1wDQYg"/>
-                <children xsi:type="basic:PartStack" xmi:id="_UEzCwbsUEeubz7Mdquol4w" elementId="PartStack@50386c51" containerData="3659" selectedElement="_1zMzsbk-EeuRIrpf1wDQYg">
+                <children xsi:type="basic:PartStack" xmi:id="_UEzCwbsUEeubz7Mdquol4w" elementId="PartStack@50386c51" containerData="3659" selectedElement="_1zMztrk-EeuRIrpf1wDQYg">
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_1zMztrk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.console.ConsoleView" ref="_1zIiMrk-EeuRIrpf1wDQYg" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -436,66 +437,16 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_1OZdcLk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.editorss" selectedElement="_EWrSsMLYEeurgt0CekdhdQ">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_EWrSsMLYEeurgt0CekdhdQ" selectedElement="_lY-uELsZEeubz7Mdquol4w" horizontal="true">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_lY-uELsZEeubz7Mdquol4w" containerData="5589" selectedElement="_lY-uEbsZEeubz7Mdquol4w" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_1OZdcbk-EeuRIrpf1wDQYg" elementId="org.eclipse.e4.primaryDataStack" toBeRendered="false" containerData="8244">
-            <tags>org.eclipse.e4.primaryDataStack</tags>
-            <tags>EditorStack</tags>
-            <children xsi:type="advanced:Placeholder" xmi:id="_fs9aMLnLEeuiVrNfshZ09Q" elementId="org.eclipse.jdt.ui.PackageExplorer" toBeRendered="false" ref="_fs8zILnLEeuiVrNfshZ09Q" closeable="true">
-              <tags>View</tags>
-              <tags>categoryTag:Java</tags>
-            </children>
-          </children>
-          <children xsi:type="basic:PartStack" xmi:id="_lY-uEbsZEeubz7Mdquol4w" elementId="PartStack@7173478a" containerData="1756" selectedElement="_KHsrkMLXEeurgt0CekdhdQ">
-            <tags>active</tags>
-            <children xsi:type="basic:Part" xmi:id="_KHsrkMLXEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HomeController.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HomeController.java&quot; partName=&quot;HomeController.java&quot; title=&quot;HomeController.java&quot; tooltip=&quot;Project_6/src/main/java/com/a/project_6/HomeController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/java/com/a/project_6/HomeController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2220&quot; selectionTopPixel=&quot;1071&quot;/>&#xD;&#xA;&lt;/editor>"/>
-              <tags>Editor</tags>
-              <tags>removeOnHide</tags>
-              <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-              <tags>active</tags>
-              <tags>activeOnClose</tags>
-            </children>
-            <children xsi:type="basic:Part" xmi:id="_wfnBoMLXEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UserDB.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserDB.java&quot; partName=&quot;UserDB.java&quot; title=&quot;UserDB.java&quot; tooltip=&quot;Project_6/src/main/java/com/a/project_6/UserDB.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/java/com/a/project_6/UserDB.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4989&quot; selectionTopPixel=&quot;2563&quot;/>&#xD;&#xA;&lt;/editor>"/>
-              <tags>Editor</tags>
-              <tags>removeOnHide</tags>
-              <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-            </children>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_EWrSsMLYEeurgt0CekdhdQ" selectedElement="_EWrSscLYEeurgt0CekdhdQ" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_1OZdcbk-EeuRIrpf1wDQYg" elementId="org.eclipse.e4.primaryDataStack" toBeRendered="false" containerData="5589">
+          <tags>org.eclipse.e4.primaryDataStack</tags>
+          <tags>EditorStack</tags>
+          <children xsi:type="advanced:Placeholder" xmi:id="_fs9aMLnLEeuiVrNfshZ09Q" elementId="org.eclipse.jdt.ui.PackageExplorer" toBeRendered="false" ref="_fs8zILnLEeuiVrNfshZ09Q" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:Java</tags>
           </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_EWrSscLYEeurgt0CekdhdQ" elementId="PartStack@50166cc" containerData="4411" selectedElement="_BCtY0MLeEeurgt0CekdhdQ">
-          <children xsi:type="basic:Part" xmi:id="_IyGxoMLXEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;main.jsp&quot; partName=&quot;main.jsp&quot; title=&quot;main.jsp&quot; tooltip=&quot;Project_6/src/main/webapp/WEB-INF/views/main.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/webapp/WEB-INF/views/main.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;11&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_GUsekMLYEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="insert.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;insert.jsp&quot; partName=&quot;insert.jsp&quot; title=&quot;insert.jsp&quot; tooltip=&quot;Project_6/src/main/webapp/WEB-INF/views/insert.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/webapp/WEB-INF/views/insert.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;225&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_SQrgsMLeEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Member.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Member.java&quot; partName=&quot;Member.java&quot; title=&quot;Member.java&quot; tooltip=&quot;Project_6/src/main/java/com/a/project_6/Member.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/java/com/a/project_6/Member.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;735&quot; selectionTopPixel=&quot;209&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_BCtY0MLeEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="update.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;update.jsp&quot; partName=&quot;update.jsp&quot; title=&quot;update.jsp&quot; tooltip=&quot;Project_6/src/main/webapp/WEB-INF/views/update.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_6/src/main/webapp/WEB-INF/views/update.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1019&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_4oYJcMLgEeurgt0CekdhdQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="myDB.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;myDB.java&quot; partName=&quot;myDB.java&quot; title=&quot;myDB.java&quot; tooltip=&quot;Project_5_table_search/src/main/java/com/a/project_5/myDB.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Project_5_table_search/src/main/java/com/a/project_5/myDB.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;1870&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          </children>
-        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_EWrSscLYEeurgt0CekdhdQ" elementId="PartStack@50166cc" containerData="4411"/>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1OiAULk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.png" tooltip="" closeable="true">
@@ -562,7 +513,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_YW1m0Lk_EeuRIrpf1wDQYg" elementId="org.eclipse.wst.server.ui.ServersView"/>
+      <toolbar xmi:id="_YW1m0Lk_EeuRIrpf1wDQYg" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1zH7Ibk-EeuRIrpf1wDQYg" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Data Source Explorer" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.ui.dse/icons/full/cview16/enterprise_explorer.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.datatools.connectivity.ui.dse.views.DataSourceExplorerView"/>
@@ -612,12 +563,13 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>highlighted</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_GgVX8LlCEeunNY1T99n4uQ" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_GgVX8blCEeunNY1T99n4uQ" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
+      <toolbar xmi:id="_GgVX8blCEeunNY1T99n4uQ" elementId="org.eclipse.ui.console.ConsoleView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1zJJQLk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.BookmarksView"/>
@@ -780,7 +732,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1HkcsLk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6KAf0MLWEeurgt0CekdhdQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0xBlFrk-EeuRIrpf1wDQYg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ESf2sMNvEeu0Woq_4tT12w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0xBlFrk-EeuRIrpf1wDQYg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1Hkcsbk-EeuRIrpf1wDQYg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -793,7 +745,7 @@
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_1HlDwrk-EeuRIrpf1wDQYg" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_M4KcsLlCEeunNY1T99n4uQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_M4KcsLlCEeunNY1T99n4uQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_11VhoLk-EeuRIrpf1wDQYg" elementId="org.eclipse.debug.ui.launchActionSet">
@@ -820,9 +772,12 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1HlDxbk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6KEKMMLWEeurgt0CekdhdQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_0xA-Nrk-EeuRIrpf1wDQYg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ESi6AMNvEeu0Woq_4tT12w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_0xA-Nrk-EeuRIrpf1wDQYg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7MHdEMLWEeurgt0CekdhdQ" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_EtOq4MNvEeu0Woq_4tT12w" elementId="org.eclipse.jst.jsp.core.jspsource.source" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1Hlq0Lk-EeuRIrpf1wDQYg" elementId="group.editor" toBeRendered="false">
@@ -3593,7 +3548,7 @@
   <addons xmi:id="_0wag-bk-EeuRIrpf1wDQYg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_0wag-rk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_0wlgELk-EeuRIrpf1wDQYg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_D83k8cNvEeu0Woq_4tT12w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_0w5pILk-EeuRIrpf1wDQYg" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_0w5pIbk-EeuRIrpf1wDQYg" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
