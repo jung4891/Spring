@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,21 +40,39 @@ public class HomeController {
 		return "insert";
 	}
 	
-	@RequestMapping(value = "/insert_action", method = RequestMethod.GET)
-	public String insert_data_action(Model model,
-			@RequestParam("id") String id,
-			@RequestParam("pwd") String pwd,
-			@RequestParam("name") String name,
-			@RequestParam("birthday") String birthday,
-			@RequestParam("address") String address) {
+	/* 
+	 * POST로 보내게 되면 ?name=""& ~~ 이렇게 안보내고 안에처럼만 보내게 된다.
+	 * http://localhost:8787/project_6/insert_action
+	 * 	 * 
+	 */
+	@RequestMapping(value = "/insert_action", method = RequestMethod.POST)
+	public String insert_data_action(HttpServletRequest request, Model model
+//			@RequestParam("id") String id,
+//			@RequestParam("pwd") String pwd,
+//			@RequestParam("name") String name,
+//			@RequestParam("birthday") String birthday,
+//			@RequestParam("address") String address
+			) {
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// utf-8(한글깨짐 방지)설정시 이렇게 받아야함.
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		String name = request.getParameter("name");
+		String birthday = request.getParameter("birthday");
+		String address = request.getParameter("address");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String now = sdf.format(Calendar.getInstance().getTime());
 		Member m  = new Member(id, pwd, name, birthday, address, now, now);
+
 		boolean isSuccess =  db.insertData(m);
 		if (isSuccess) {			
 			model.addAttribute("msg", name + " 님의 데이터가 정상입력 되었습니다. ^^");
 		} else {
-			model.addAttribute("msg", "DB Error");
+			model.addAttribute("msg", "아이디가 중복되었거나 DB애러입니다.");
 		}
 		return "message";
 	}
@@ -81,6 +101,38 @@ public class HomeController {
 		return "update";
 	}
 	
+	@RequestMapping(value = "/insert_action", method = RequestMethod.POST)
+	public String insert_data_action(HttpServletRequest request, Model model
+//			@RequestParam("id") String id,
+//			@RequestParam("pwd") String pwd,
+//			@RequestParam("name") String name,
+//			@RequestParam("birthday") String birthday,
+//			@RequestParam("address") String address
+			) {
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// utf-8(한글깨짐 방지)설정시 이렇게 받아야함.
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		String name = request.getParameter("name");
+		String birthday = request.getParameter("birthday");
+		String address = request.getParameter("address");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String now = sdf.format(Calendar.getInstance().getTime());
+		Member m  = new Member(id, pwd, name, birthday, address, now, now);
+
+		boolean isSuccess =  db.insertData(m);
+		if (isSuccess) {			
+			model.addAttribute("msg", name + " 님의 데이터가 정상입력 되었습니다. ^^");
+		} else {
+			model.addAttribute("msg", "아이디가 중복되었거나 DB애러입니다.");
+		}
+		return "message";
+	}
+	
 	@RequestMapping(value = "/update_action", method = RequestMethod.GET)
 	public String update_action(Model model,
 			@RequestParam("idx") int idx,
@@ -102,15 +154,17 @@ public class HomeController {
 			model.addAttribute("msg", "DB Error");
 		}
 		return "message";
-
-
 	}
 	
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
 	public String delete(Locale locale, Model model,
 		@RequestParam("idx") int idx) {
-		db.deleteData(idx);
-		model.addAttribute("msg", "데이터가 정상 삭제되었습니다.");
+		boolean isSuccess = db.deleteData(idx);
+		if (isSuccess) {			
+			model.addAttribute("msg", "데이터가 정상 삭제되었습니다.~~");
+		} else {
+			model.addAttribute("msg", "DB Error");
+		}
 		return "message";
 	}
 	
@@ -126,5 +180,38 @@ public class HomeController {
 		model.addAttribute("htmlList", htmlStr);
 		return "list";
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String loginMethod(Model model) {
+		return "login";
+	}
+	
+	@RequestMapping(value = "/login_action", method = RequestMethod.POST)
+	public String login_action(HttpServletRequest request, Model model) {
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// utf-8(한글깨짐 방지)설정시 이렇게 받아야함.
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		String name = request.getParameter("name");
+		String birthday = request.getParameter("birthday");
+		String address = request.getParameter("address");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String now = sdf.format(Calendar.getInstance().getTime());
+		Member m  = new Member(id, pwd, name, birthday, address, now, now);
+
+		boolean isSuccess =  db.insertData(m);
+		if (isSuccess) {			
+			model.addAttribute("msg", name + " 님의 데이터가 정상입력 되었습니다. ^^");
+		} else {
+			model.addAttribute("msg", "아이디가 중복되었거나 DB애러입니다.");
+		}
+		return "message";
+	}
+	
+	
 	
 }

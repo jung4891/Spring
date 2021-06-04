@@ -60,16 +60,29 @@ public class UserDB {
 			SQLiteConfig config = new SQLiteConfig();
 			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/Member.db", config.toProperties());
 			
+			// 아이디 중복 여부 검사
+			String query = " SELECT * FROM Member " 
+						   + "WHERE id=" + m.id;				
+			Statement stmt = con.createStatement();	
+			ResultSet resSet = stmt.executeQuery(query);
+			if (resSet.next()) {
+				stmt.close();							
+				con.close();	
+				return false;
+			} 
+			
 			// password hash(단방향) -> md5(옛날), sha256(이거를 주로 사용)
 			m.pwd = sha256(m.pwd);
-			String query = " INSERT INTO Member (id, pwd, name, birthday, address, created, updated) " + 
+			String query2 = " INSERT INTO Member (id, pwd, name, birthday, address, created, updated) " + 
 						   " VALUES ('" + m.id + "', '" + m.pwd + "', '" + m.name + "', '" + m.birthday + 
 						   "', '" + m.address + "', '"  + m.created + "', '"  + m.updated + "') ";					
 			
-			Statement stmt = con.createStatement();	
-			int result = stmt.executeUpdate(query);			// 실행되면 적용된 row수(1) 반환됨			
+			Statement stmt2 = con.createStatement();	
+			int result = stmt2.executeUpdate(query2);			// 실행되면 적용된 row수(1) 반환됨			
 			// System.out.println("result: " +result);		(DML - INSERT, UPDATE, DELETE)
 			if (result < 1) {
+				stmt2.close();							
+				con.close();	
 				return false;
 			}
 			stmt.close();							
@@ -80,6 +93,25 @@ public class UserDB {
 		}
 		return true;
 	}
+	
+//	public boolean checkId(Member m) {
+//		try {
+//			Class.forName("org.sqlite.JDBC");
+//			SQLiteConfig config = new SQLiteConfig();
+//			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/Member.db", config.toProperties());
+//			
+//			String query = " SELECT * FROM Member " 
+//							+ "WHERE id=" + m.id;				
+//			Statement stmt = con.createStatement();	
+//			ResultSet resSet = stmt.executeQuery(query);	
+//			stmt.close();							
+//			con.close();		
+//			return resSet.next();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			return false;
+//		}
+//	}
 	
 	public String selectAllData() {
 		String resStr = "";
@@ -180,22 +212,26 @@ public class UserDB {
 		return true;
 	}
 	
-	public void deleteData(int idx) {
+	public boolean deleteData(int idx) {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			SQLiteConfig config = new SQLiteConfig();
-			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/staff.db", config.toProperties());
-			String query = " DELETE FROM staffTable WHERE idx=? ";
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/Member.db", config.toProperties());
+			String query = " DELETE FROM Member WHERE idx=? ";
 			
 			PreparedStatement psmt = con.prepareStatement(query);
 			psmt.setInt(1, idx);		
-			psmt.executeUpdate();
+			int result = psmt.executeUpdate();
+			if (result < 1) {
+				return false;
+			}
 			psmt.close();							
 			con.close();							
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		}
-
+		return true;
 	}
 	
 	public String searchData(String nameStr) {
