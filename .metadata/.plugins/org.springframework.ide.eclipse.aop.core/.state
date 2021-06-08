@@ -5,6 +5,6 @@
 <aop-project name="Project_5_table_search"/>
 <aop-project name="Project_4_table_myDB"/>
 <aop-project name="Project_2_db_insert"/>
-<aop-project name="Project_3_table_update_delete"/>
 <aop-project name="LogIn"/>
+<aop-project name="Project_3_table_update_delete"/>
 </aop-reference-model>

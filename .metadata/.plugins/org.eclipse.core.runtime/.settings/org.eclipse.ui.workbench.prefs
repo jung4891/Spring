@@ -1,6 +1,6 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
-PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.buildship.stsmigration;org.eclipse.epp.mpc.ui;org.eclipse.equinox.p2.ui.sdk.scheduler;org.eclipse.jst.j2ee.webservice.ui;org.eclipse.m2e.discovery;org.eclipse.mylyn.tasks.ui;org.eclipse.mylyn.team.ui;org.eclipse.oomph.ui;org.eclipse.ui.monitoring;com.vmware.vfabric.ide.eclipse.tcserver.configurator;org.eclipse.lsp4e;org.springframework.ide.eclipse.boot.validation;org.springframework.ide.eclipse.imports;org.springframework.ide.eclipse.osgi.targetdefinition;org.springsource.ide.eclipse.commons.frameworks.ui;org.springsource.ide.eclipse.commons.ui;
 eclipse.preferences.version=1
 org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Consolas|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.debug.ui.DetailPaneFont=1|Consolas|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
