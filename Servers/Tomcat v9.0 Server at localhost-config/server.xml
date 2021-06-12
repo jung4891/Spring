@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Project_3_table_update_delete" path="/project_3" reloadable="true" source="org.eclipse.jst.jee.server:Project_3_table_update_delete"/><Context docBase="Project_4_table_myDB" path="/project_4" reloadable="true" source="org.eclipse.jst.jee.server:Project_4_table_myDB"/><Context docBase="Project_5_table_search" path="/project_5" reloadable="true" source="org.eclipse.jst.jee.server:Project_5_table_search"/><Context docBase="Project_6" path="/project_6" reloadable="true" source="org.eclipse.jst.jee.server:Project_6"/><Context docBase="LogIn" path="/login" reloadable="true" source="org.eclipse.jst.jee.server:LogIn"/></Host>
+      <Context docBase="Project_3_table_update_delete" path="/project_3" reloadable="true" source="org.eclipse.jst.jee.server:Project_3_table_update_delete"/><Context docBase="Project_4_table_myDB" path="/project_4" reloadable="true" source="org.eclipse.jst.jee.server:Project_4_table_myDB"/><Context docBase="Project_5_table_search" path="/project_5" reloadable="true" source="org.eclipse.jst.jee.server:Project_5_table_search"/><Context docBase="Project_6_table(done)_session_js" path="/project_6" reloadable="true" source="org.eclipse.jst.jee.server:Project_6_table(done)_session_js"/></Host>
     </Engine>
   </Service>
 </Server>
