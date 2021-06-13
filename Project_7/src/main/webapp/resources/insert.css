@@ -1,0 +1,156 @@
+
+.top {
+	background-color: white;  /* white */
+	position: relative;
+	left: 0;
+	padding: 0;
+	width: 100%;
+	height: 20px;
+	padding-top: 7px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: auto;
+}
+
+.top p {
+	font-size: 15px;		/* 16px로 올리는 순간 Memo 정렬이 어긋남.. 개골때리네... */
+	line-height: 20px;
+	background: #ffffff;	/* 최상단 나의메모, 로그인, 회원가입 배경색 */
+}
+
+.top p:hover {
+	color: #a8a8a8;
+}
+
+.top_menu {
+	display: inline;
+}
+
+.top_menu li {
+	display: inline-block;
+}
+
+.top_menu .login {
+	float: right;
+	padding-right: 20px;
+}
+
+.top_menu .login a p {
+	float: right;
+	color: black;			/* 최상단 글자색 */
+}
+
+.top_menu .login:hover p {
+	color: red;				/* 최상단 hover 글자색 */
+}
+
+header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	align-content: center;
+}
+
+.header-wrap a {
+	font-size: 3em;
+	background: #ffffff;
+	text-align: center;
+	color: #443252;
+}
+
+nav ul {
+	width: 100%;
+	/* background-color: rgba(10, 42, 39, 0.983); */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* 메뉴들이 나란히 나타날 수 있게 해주는 기능 */
+nav ul li {
+	display: inline-block;
+}
+
+/* 각 메뉴별로 공간이 나눠져 있는데, 각 공간의 사이즈 */
+.menu {
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.menu a {
+	color: #0c2d45;
+	padding: 0px 35px;
+	text-decoration: none;
+	display: block;
+}
+
+.menu:hover:not(.home) {
+	background-color: #ffd6ac;		/* NEW MEMO, OPEN LIST, CREATE TABLE hover시 배경색 */
+	color: white;
+}
+
+/* div태그 메인 공간에 색깔 넣어둠 */
+.main_bottom {
+	margin: 30px;
+	padding: 10px 10px;
+	height: auto;
+	text-align: center;
+	background-image: linear-gradient(white 1.9000000000000001px, transparent 1.9000000000000001px),
+		linear-gradient(to right, white 1.9000000000000001px, #eeeeee 1.9000000000000001px);
+	background-size: 38px 38px;;
+}
+
+/* insert 내용 태그 */
+form {
+	width: 80%;
+	height: 80%;
+	background: #cecece;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px 20px 30px 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20;
+	text-align: center;
+	background: #cecece;
+}
+
+input[type=text] {
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+}
+
+textarea {
+	width: 100%; 
+	height: 150px;
+	font-size: 18px;
+}
+
+input[type=submit] {
+	margin: 30px 2px 3px 4px;
+	background: gray;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1.6em;
+	padding: 0 2em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+
+input[type=submit]:hover {
+	background: #d0d0ff; 
+	color: #8080ff; 
+}

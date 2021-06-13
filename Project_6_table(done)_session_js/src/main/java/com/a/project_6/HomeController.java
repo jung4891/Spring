@@ -323,7 +323,6 @@ public class HomeController {
 			model.addAttribute("msg", "로그인을 하지 않았습니다.");
 			return "message";
 		}
-
 	}
 
 	
