@@ -27,4 +27,13 @@ public class User {
 		this.id = userId;
 		this.pwd = userPwd;
 	}
+	
+	// 내 정보 변경시
+	User(int idx,String newPwd, String name, String birthday, String address) {
+		this.idx = idx;
+		this.pwd = newPwd;
+		this.name = name;
+		this.birthday = birthday;
+		this.address = address;
+	}
 }

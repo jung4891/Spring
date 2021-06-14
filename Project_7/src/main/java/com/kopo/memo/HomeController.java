@@ -246,7 +246,7 @@ public class HomeController {
 		Memo m  = new Memo(idx, title, content, now);
 		boolean isSuccess =  db.updateMemo(m);
 		if (isSuccess) {			
-			model.addAttribute("msg", writer + " 님의 데이터가 수정되었습니다~~");
+			model.addAttribute("msg", writer + " 님의 메모가 수정되었습니다~~");
 		} else {
 			model.addAttribute("msg", "DB Error");
 		}
@@ -264,8 +264,50 @@ public class HomeController {
 			model.addAttribute("msg", "DB Error");
 		}
 		return "mainLogin";
-		
 	}
+	
+	@RequestMapping(value = "/updateUser", method = RequestMethod.GET)
+	public String updateUser(HttpServletRequest req, Model model) {
+		HttpSession session = req.getSession();
+		int userIdx = (Integer) session.getAttribute("userIdx");
+		
+		MemoDB db = new MemoDB();
+		User u = db.selectUser(userIdx);
+		
+		model.addAttribute("idx", u.idx);
+		model.addAttribute("id", u.id);
+		model.addAttribute("name", u.name);
+		model.addAttribute("birthday", u.birthday);
+		model.addAttribute("address", u.address);
+		return "updateUser";
+	}
+	
+	@RequestMapping(value = "/updateUser_action", method = RequestMethod.POST)
+	public String updateUser_action(HttpServletRequest request, Model model) {
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		int idx = Integer.parseInt(request.getParameter("idx"));
+		String pwd = request.getParameter("pwd1");
+		String name = request.getParameter("name");
+		String birthday = request.getParameter("birthday");
+		String address = request.getParameter("address");
+		
+		MemoDB db = new MemoDB();
+		User u  = new User(idx, pwd, name, birthday, address);
+		boolean isSuccess =  db.updateUser(u);
+		if (isSuccess) {			
+			model.addAttribute("msg", name + " 님의 데이터가 수정되었습니다~~");
+		} else {
+			model.addAttribute("msg", "DB Error");
+		}
+		return "mainLogin";
+	}
+	
+	
+	
 	
 	
 }

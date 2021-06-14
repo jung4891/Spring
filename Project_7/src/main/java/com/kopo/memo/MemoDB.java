@@ -323,4 +323,68 @@ public class MemoDB {
 		}
 		return true;
 	}
+	
+	public User selectUser(int userIdx) {
+		User u = new User();
+		try {
+			Class.forName("org.sqlite.JDBC");
+			SQLiteConfig config = new SQLiteConfig();
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "C:/tomcat/memoDB.db", config.toProperties());
+			String query = "SELECT * FROM memoUser WHERE idx=?";
+			PreparedStatement psmt = con.prepareStatement(query);
+			psmt.setInt(1, userIdx);
+			ResultSet resultSet = psmt.executeQuery();
+
+			if (resultSet.next()) {
+				u.idx = resultSet.getInt("idx");
+				u.id = resultSet.getString("id");
+				u.name = resultSet.getString("name");
+				u.birthday = resultSet.getString("birthday");
+				u.address = resultSet.getString("address");
+			}
+			psmt.close();
+			con.close();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return u;
+	}
+	
+	public boolean updateUser(User u) {
+		try {
+			Class.forName("org.sqlite.JDBC");
+			SQLiteConfig config = new SQLiteConfig();
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/memoDB.db", config.toProperties());
+			
+			u.pwd = sha256(u.pwd);
+			String query = " UPDATE memoUser SET pwd=?, name=?, birthday=?, address=? WHERE idx=? ";	// (주의!) 컬럼추가시 , 꼭 넣기
+			PreparedStatement psmt = con.prepareStatement(query);
+			psmt.setString(1, u.pwd);		
+			psmt.setString(2, u.name);		
+			psmt.setString(3, u.birthday);		
+			psmt.setString(4, u.address);		
+			psmt.setInt(5, u.idx);			// (주의!) 숫자 중복없나 확인, 맞게 넣었는지도 확인!
+
+			System.out.println("[UPDATE query]");
+			System.out.println(psmt);
+			int result = psmt.executeUpdate();
+			System.out.printf("\nquery실행후 결과값: %d", result);
+			if (result < 1) {
+				psmt.close();							
+				con.close();
+				return false;
+			} else {
+				psmt.close();							
+				con.close();							
+				return true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	
 }

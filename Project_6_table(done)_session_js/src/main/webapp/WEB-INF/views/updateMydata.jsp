@@ -29,7 +29,7 @@
 <body>
   	<section class="wrap">
   		<h1>UPDATE MY DATA</h1>
-        <form action="updateMydata_action" method="past" id="update_mydata"> 
+        <form action="updateMydata_action" method="post" id="update_mydata"> 
             <input type="hidden" name="idx" value="${idx }">
             <input type="hidden" name="id" value="${id }">
             <label> 아이디: &nbsp 

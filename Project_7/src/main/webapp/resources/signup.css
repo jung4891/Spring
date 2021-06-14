@@ -149,7 +149,7 @@ input[type="text"], [type="password"], [type="date"] {
 	font-size: 15px;
 }
 
-input[type=submit] {
+input[type=submit], [type=button] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -165,8 +165,22 @@ input[type=submit] {
 	outline: none;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, [type=button]:hover {
 	background: #fff;
 	color: #408080;
 }
+
+/* input[type="button"] {
+    width: 90%;
+    display: inline-block;
+    margin: 10px;
+    background: #918191;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    height: 3em;
+    font-size: large; 
+    font-weight: bold;
+    border-radius: 15px;
+} */
 
