@@ -36,7 +36,6 @@ public class HomeController {
 				return "main";
 			}
 		} catch (Exception e) {			// 비로그인시 여기로 빠짐
-			e.printStackTrace();
 			return "main";
 		}
 	}
@@ -77,7 +76,7 @@ public class HomeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 			model.addAttribute("msg", "로그인이 필요합니다.");
-			return "mainLogin";
+			return "main";
 		}
 	}
 	
@@ -183,12 +182,16 @@ public class HomeController {
 		if (userIdx > 0) {
 			HttpSession session = request.getSession();
 			session.setAttribute("is_login", true);
-			session.setAttribute("login_id", id);
 			session.setAttribute("userIdx", userIdx);
+			session.setAttribute("login_id", id);
+			session.setAttribute("login_pwd", pwd);		// 탈퇴시 사용
 			model.addAttribute("msg", "로그인 되었습니다.");
 			return "mainLogin";
 		} else if (userIdx == -1) {
-			model.addAttribute("msg", "아이디 혹은 비밀번호가 틀렸습니다.");
+			model.addAttribute("msg", "해당 아이디는 등록되어 있지 않습니다.");
+			return "main";			
+		} else if (userIdx == -2) {
+			model.addAttribute("msg", "비밀번호가 틀렸습니다.");
 			return "main";			
 		} else {
 			model.addAttribute("msg", "DB Error");
@@ -200,7 +203,7 @@ public class HomeController {
 	public String logout(HttpServletRequest req, Model model) {
 		HttpSession session = req.getSession();
 		session.invalidate();
-		model.addAttribute("msg", "로그아웃됨");
+		model.addAttribute("msg", "로그아웃 되었습니다.");
 		return "main";
 	}
 	
@@ -239,7 +242,7 @@ public class HomeController {
 		String title = request.getParameter("title");
 		String writer = request.getParameter("writer");
 		String content = request.getParameter("content");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		String now = sdf.format(Calendar.getInstance().getTime());
 		
 		MemoDB db = new MemoDB();
@@ -279,6 +282,8 @@ public class HomeController {
 		model.addAttribute("name", u.name);
 		model.addAttribute("birthday", u.birthday);
 		model.addAttribute("address", u.address);
+		model.addAttribute("pwd", u.pwd);
+		
 		return "updateUser";
 	}
 	
@@ -306,8 +311,31 @@ public class HomeController {
 		return "mainLogin";
 	}
 	
+	@RequestMapping(value = "/unregisterPwdCheck", method = RequestMethod.GET)
+	public String unregisterPwdCheck(HttpServletRequest req, Model model) {
+		HttpSession session = req.getSession();
+		String login_pwd = (String) session.getAttribute("login_pwd");
+		model.addAttribute("login_pwd", login_pwd);
+		return "unregisterPwdCheck";
+	}
 	
 	
+	@RequestMapping(value = "/unregister_action", method = RequestMethod.GET)
+	public String unregister_action(HttpServletRequest req, Model model) {
+
+		// 로그아웃, db삭제
+		HttpSession session = req.getSession();
+		int userIdx = (Integer) session.getAttribute("userIdx");
+		session.invalidate();	// 로그아웃
+		MemoDB db = new MemoDB();
+		boolean isSuccess = db.deleteUser(userIdx);
+		if (isSuccess) {			
+			model.addAttribute("msg", "탈퇴가 정상처리되었습니다.");
+		} else {
+			model.addAttribute("msg", "DB Error");
+		}
+		return "main";
+	}
 	
 	
 }

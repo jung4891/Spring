@@ -175,32 +175,41 @@ public class MemoDB {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			SQLiteConfig config = new SQLiteConfig();
-			Connection connection = DriverManager.getConnection("jdbc:sqlite:/" + "C:/tomcat/memoDB.db", config.toProperties());
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "C:/tomcat/memoDB.db", config.toProperties());
 
-			user.pwd = sha256(user.pwd);
-			String query2 = "SELECT * FROM memoUser WHERE id = ? AND pwd = ?";
-			PreparedStatement preparedStatement2 = connection.prepareStatement(query2);
-			preparedStatement2.setString(1, user.id);
-			preparedStatement2.setString(2, user.pwd);
-			
-			ResultSet resultSet = preparedStatement2.executeQuery();
-			if (resultSet.next()) {
-				int userIdx = resultSet.getInt("idx");
-				preparedStatement2.close();
-				connection.close();
-				return userIdx;
+			String query = "SELECT * FROM memoUser WHERE id = ?";
+			PreparedStatement psmt = con.prepareStatement(query);
+			psmt.setString(1, user.id);
+	
+			ResultSet resultSet = psmt.executeQuery();
+			if (!resultSet.next()) {
+				psmt.close();
+				con.close();
+				return -1; 
 			} else {
-				preparedStatement2.close();
-				connection.close(); 
-				return -1;
+				psmt.close();
+				user.pwd = sha256(user.pwd);
+				String query2 = "SELECT * FROM memoUser WHERE id = ? AND pwd = ?";
+				psmt = con.prepareStatement(query2);
+				psmt.setString(1, user.id);
+				psmt.setString(2, user.pwd);
+				
+				resultSet = psmt.executeQuery();
+				if (resultSet.next()) {
+					int userIdx = resultSet.getInt("idx");
+					psmt.close();
+					con.close();
+					return userIdx;
+				} else {
+					psmt.close();
+					con.close(); 
+					return -2;
+				}
 			}
-		} catch (ClassNotFoundException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-			return -2;
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return -2;
-		}
+			return -3;
+		} 
 	}
 	
 	public String selectMyMemo(int userIdx) {
@@ -384,6 +393,28 @@ public class MemoDB {
 			e.printStackTrace();
 			return false;
 		}
+	}
+	
+	public boolean deleteUser(int idx) {
+		try {
+			Class.forName("org.sqlite.JDBC");
+			SQLiteConfig config = new SQLiteConfig();
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/memoDB.db", config.toProperties());
+			String query = " DELETE FROM memoUser WHERE idx=? ";
+			
+			PreparedStatement psmt = con.prepareStatement(query);
+			psmt.setInt(1, idx);		
+			int result = psmt.executeUpdate();
+			if (result < 1) {
+				return false;
+			}
+			psmt.close();							
+			con.close();							
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
 	}
 	
 	

@@ -1,5 +1,7 @@
 INDEX VERSION 1.131
 C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3006327891.index
 \Project_6_table(done)_session_js\src\main\java
+C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3314655319.index
+\Project_7_memo(done)_DB(memo, memoUser)\src\main\java
 C:\Workspaces\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3032297491.index
 \Project_7\src\main\java

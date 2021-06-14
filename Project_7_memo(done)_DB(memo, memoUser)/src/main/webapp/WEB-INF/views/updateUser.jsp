@@ -26,7 +26,7 @@
 		
 		function unregister_event() {
 			if (confirm("정말 탈퇴하시겠습니까??") == true){    // 확인
-				location.href="/memo/login";
+				location.href="/memo/unregisterPwdCheck";
 			} else{   //취소
 			    return;
 			}

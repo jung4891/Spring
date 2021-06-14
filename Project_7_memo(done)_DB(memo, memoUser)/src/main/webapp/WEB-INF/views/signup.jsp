@@ -17,7 +17,6 @@
 			<ul class="top_menu">
 				<li class="login"><a href="signup"><p>회원가입</p></a></li>
 				<li class="login"><a href="login"><p>로그인</p></a></li>
-				<li class="login"><a href="myMemo"><p>나의메모</p></a></li>
 			</ul>
 		</div>
 	</div>

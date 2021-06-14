@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="Project_7"/>
 <aop-project name="Project_6_table(done)_session_js"/>
+<aop-project name="Project_7_memo(done)_DB(memo, memoUser)"/>
 </aop-reference-model>
