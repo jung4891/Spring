@@ -1,0 +1,31 @@
+
+.wrap {     
+    width: 90%;
+    margin: 0 auto;  /* 가운데 맞춤*/
+    padding: 20px 0px;  
+}
+
+table {
+    border-collapse: collapse;  /* 설정안하면 모든 칸이 다 테두리가 보이게됨 */
+    width: 100%;
+    table-layout: fixed; 	 /* th, td 사이즈 고정 (ex) <th width="50%"> )*/  
+}
+
+th {
+    text-align: center;
+    background: #999;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #f1f1f1;
+}
+
+td {
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #f1f1f1;
+
+    overflow: hidden;			/* 글자가 넘어가면 숨김처리 (부모 태그에서 테이블 크기 지정,고정시켜야함 */
+    text-overflow: ellipsis; 	/* 글자가 넘어가면 ...처리 (위 라인 선언해줘야 적용됨)*/
+    /* 근데 크롬에서는 적요잉 안됨.. 그리고 주소값도 긴데 왜 밖으로 안나가지??*/
+}
+

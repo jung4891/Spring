@@ -15,7 +15,7 @@
        	<!--  
        	<a href="/project_6/show_list" >목록보기</a> &nbsp;
        	-->
-    	<a href="/project_6" >홈으로</a>
+    	<a href="/fin" >홈으로</a>
     	</div>
 	</section>
 </body>
