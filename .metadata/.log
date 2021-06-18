@@ -1,15 +1,15 @@
-!SESSION 2021-06-15 09:00:16.831 -----------------------------------------------
+!SESSION 2021-06-18 09:08:59.501 -----------------------------------------------
 eclipse.buildId=4.18.0.I20201202-1800
-java.version=15.0.2
+java.version=15.0.1
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-This is a continuation of log file C:\Workspaces\Spring\.metadata\.bak_0.log
-Created Time: 2021-06-15 11:57:18.922
+This is a continuation of log file C:\Workspaces\Spring\.metadata\.bak_6.log
+Created Time: 2021-06-18 10:06:34.580
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.922
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.580
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -37,12 +37,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -167,13 +172,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.923
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.584
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -201,12 +206,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -331,13 +341,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.924
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.588
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -365,12 +375,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -495,13 +510,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.925
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.590
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -529,12 +544,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -659,13 +679,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.926
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.591
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -693,12 +713,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -823,13 +848,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.927
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.593
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -857,12 +882,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -987,13 +1018,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.928
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.595
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1021,12 +1052,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1151,13 +1188,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.928
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.597
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1185,12 +1222,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueMenuItems(CompatibilityView.java:239)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:272)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1315,13 +1358,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.929
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.598
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1349,12 +1392,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1479,13 +1528,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.930
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.600
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1513,12 +1562,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1643,13 +1698,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.931
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.602
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1677,12 +1732,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1807,13 +1868,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.931
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.606
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -1841,12 +1902,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1971,13 +2038,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.932
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.608
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2005,12 +2072,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2135,13 +2208,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.933
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.610
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2169,12 +2242,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2299,13 +2378,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.934
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.611
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2333,12 +2412,18 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:540)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2463,13 +2548,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 157 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.935
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.614
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2497,12 +2582,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2627,13 +2717,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.936
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.615
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2661,12 +2751,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2791,13 +2886,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.936
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.617
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2825,12 +2920,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2955,13 +3055,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.937
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.619
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -2989,12 +3089,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3119,13 +3224,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.938
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.621
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -3153,12 +3258,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3283,13 +3393,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.939
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.623
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -3317,12 +3427,17 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
 	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
 	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
+	at org.eclipse.ui.internal.PopupMenuExtender.unlink(PopupMenuExtender.java:536)
+	at org.eclipse.ui.internal.PopupMenuExtender.dispose(PopupMenuExtender.java:514)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:308)
+	at org.eclipse.ui.internal.ViewSite.dispose(ViewSite.java:58)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:291)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
 	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3447,501 +3562,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
+	... 156 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.940
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:713)
-	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:456)
-	at org.eclipse.emf.common.util.BasicEMap.remove(BasicEMap.java:1751)
-	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
-	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
-	at org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil.clearOpaqueItem(OpaqueElementUtil.java:50)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.clearOpaqueToolBarItems(CompatibilityView.java:313)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:285)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:201)
-	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
-	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
-	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:942)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2095)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1726)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
-	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1722)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1760)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
-	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 151 more
-
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.940
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:713)
-	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:456)
-	at org.eclipse.emf.common.util.BasicEMap.remove(BasicEMap.java:1751)
-	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
-	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:287)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:201)
-	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
-	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
-	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:942)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2095)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1726)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
-	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1722)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1760)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
-	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 149 more
-
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.941
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:713)
-	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:456)
-	at org.eclipse.emf.common.util.BasicEMap.remove(BasicEMap.java:1751)
-	at org.eclipse.emf.common.util.BasicEMap.removeKey(BasicEMap.java:628)
-	at org.eclipse.emf.common.util.BasicEMap$DelegatingMap.remove(BasicEMap.java:798)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.disposeSite(CompatibilityView.java:287)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at jdk.internal.reflect.GeneratedMethodAccessor380.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:201)
-	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
-	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
-	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:942)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
-	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2095)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1726)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
-	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1722)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1751)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1751)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1760)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
-	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
-	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	... 149 more
-
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.960
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.640
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4065,13 +3692,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.960
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.641
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4195,13 +3822,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.962
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.646
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4325,13 +3952,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.963
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.647
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4455,13 +4082,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.965
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4585,13 +4212,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.965
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.654
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4715,13 +4342,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.967
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.657
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4845,13 +4472,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.967
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.658
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -4975,13 +4602,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.969
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.662
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5105,13 +4732,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.969
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.663
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5235,13 +4862,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.971
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.667
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5365,13 +4992,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.971
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.668
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5495,13 +5122,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.973
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.673
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5625,13 +5252,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.973
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.674
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5755,13 +5382,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.975
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.676
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -5885,13 +5512,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.975
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.678
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6015,13 +5642,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.977
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.681
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6145,13 +5772,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:18.977
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.682
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6275,13 +5902,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.068
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.823
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6405,13 +6032,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.069
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.824
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6535,13 +6162,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.071
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.828
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6665,13 +6292,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.072
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.829
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6795,13 +6422,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.073
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.832
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -6925,13 +6552,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.074
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.833
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7055,13 +6682,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.084
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.835
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7185,13 +6812,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.084
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.837
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7315,13 +6942,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.086
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.840
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7445,13 +7072,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.087
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.841
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7575,13 +7202,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.088
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.844
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7705,13 +7332,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.089
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.845
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7835,13 +7462,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.091
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.848
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -7965,13 +7592,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.091
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.849
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8095,13 +7722,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.093
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.852
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8225,13 +7852,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.094
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.853
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8355,13 +7982,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.095
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.857
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8485,13 +8112,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.096
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.859
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8615,13 +8242,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.097
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.863
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8745,13 +8372,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.098
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.864
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -8875,13 +8502,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.100
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.867
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9005,13 +8632,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.100
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.869
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9135,13 +8762,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.102
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.873
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9265,13 +8892,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.102
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.875
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9395,13 +9022,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.104
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.878
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9525,13 +9152,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.104
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.879
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9655,13 +9282,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.112
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.893
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9785,13 +9412,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.112
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.895
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -9915,13 +9542,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.119
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.909
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -10045,13 +9672,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.120
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.911
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -10175,13 +9802,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.122
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.914
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -10305,13 +9932,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.123
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.915
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -10435,13 +10062,13 @@ org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Canno
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
 	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.handleTransientDataEvents(TrimStack.java:229)
-	at jdk.internal.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
 	... 117 more
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.126
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.919
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
@@ -10542,7 +10169,7 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.applicati
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 
-!ENTRY org.eclipse.ui 4 0 2021-06-15 11:57:19.130
+!ENTRY org.eclipse.ui 4 0 2021-06-18 10:06:34.928
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.MUIElement.getWidget()" because "this.minimizedElement" is null
