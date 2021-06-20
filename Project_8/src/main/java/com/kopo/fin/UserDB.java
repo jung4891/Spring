@@ -387,6 +387,8 @@ public class UserDB {
 		return resStr;
 	}
 	
+	
+
 	public ArrayList<String> selectAptName3() {
 		ArrayList<String> resArr = new ArrayList<String>();
 		try {
@@ -394,7 +396,7 @@ public class UserDB {
 			SQLiteConfig config = new SQLiteConfig();
 			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/apartment.db", config.toProperties());
 			
-			String query = " SELECT name FROM Apart ";				
+			String query = " SELECT name FROM Apart ";				 
 			Statement stmt = con.createStatement();	
 			ResultSet resSet = stmt.executeQuery(query);				
 			while(resSet.next()) {

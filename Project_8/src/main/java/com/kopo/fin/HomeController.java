@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.sqlite.SQLiteConfig;
 
-
+// 강의자료 210618 3번자료. ArrayList<Apart>랑 aptIdx 활용함. 땡길때 요 두개로 체인지 ㄱㄱ.
 
 @Controller
 public class HomeController {
