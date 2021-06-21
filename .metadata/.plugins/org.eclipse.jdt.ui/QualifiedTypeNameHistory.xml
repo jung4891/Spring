@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="com.a.project_3.DBCommon"/>
     <fullyQualifiedTypeName name="com.a.project_3.UserDB"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.beans.Statement"/>
@@ -29,4 +28,5 @@
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

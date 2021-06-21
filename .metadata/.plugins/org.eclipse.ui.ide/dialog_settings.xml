@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Workspaces\Java"/>
 			<item value="C:\Users\go_go\Desktop\memoProgram2"/>
 			<item value="C:\Workspaces\Spring\Project_6_table(done)_session_js"/>
 			<item value="C:\Users\go_go\Desktop\LogIn"/>
