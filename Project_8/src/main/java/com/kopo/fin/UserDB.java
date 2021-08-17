@@ -218,7 +218,7 @@ public class UserDB {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			SQLiteConfig config = new SQLiteConfig();
-			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "c:/tomcat/apartment.db", config.toProperties());
+			Connection con = DriverManager.getConnection("jdbc:sqlite:/" + "C:/Users/go_go/Desktop/apartment.db", config.toProperties());
 
 			String query = " INSERT INTO Apart (name) " 
 							+ " VALUES (?)";	

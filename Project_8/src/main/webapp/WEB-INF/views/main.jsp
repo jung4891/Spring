@@ -25,6 +25,12 @@
 		<a href="apart_list">아파트목록</a>
 		<a href="info_apart">아파트 통계</a>
 	</section>
+	
+	
 
 </body>
 </html>
+
+<script type="text/javascript">
+
+</script>
