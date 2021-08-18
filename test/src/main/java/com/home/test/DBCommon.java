@@ -87,7 +87,7 @@ public class DBCommon<T> {
 		}
 	}
 
-	public void insertData(T t) {
+	public boolean insertData(T t) {
 		try {
 			Class<?> dataClass = t.getClass();
 			// Class.forName("com.politech.student.Student")
@@ -122,10 +122,13 @@ public class DBCommon<T> {
 			Statement statement = this.connection.createStatement();
 			int result = statement.executeUpdate(query);
 			statement.close();
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
+			return false;
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		} finally {
 			this.close();
 		}

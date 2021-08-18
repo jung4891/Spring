@@ -9,7 +9,7 @@
 	<!-- c:url 안쓰고 그냥 하드코딩으로 입력은 어떻게 하지??  -->
 </head>
 <body>
-	<h1>Ajax 연습</h1>
+	<h1 style="display: inline;">Ajax 연습</h1> &nbsp&nbsp&nbsp&nbsp&nbsp
 	
 	<button onclick="location.href='/test'">메인으로</button> <br><br><br>
 	
@@ -45,9 +45,9 @@
 </html> 
 
 <script>
-
 	// 1. 
 	$('#btn1').on('click', function(){
+		alert("aa");
 		var dataSet = {
 				name: "hyukjung",
 				age: 32,
@@ -68,9 +68,9 @@
 	});
 	
 	// 1-1. 
-	// jackson library 추가해야함. -> json 형태로 데이터를 리턴해주는 애. ()
-	//   추가 안하게 되면 406 에러가 뜨는데 그 원인은 서버에서 request가 
-	//   알려준 content type에 맞는 response 를 생성할 수 없기 때문에 발생함
+	// jackson library 추가해야함. -> json 형태로 데이터를 리턴해주는 애. 
+	// 추가 안하게 되면 406 에러가 뜨는데 그 원인은 서버에서 request가 
+	// 알려준 content type에 맞는 response 를 생성할 수 없기 때문에 발생함
 	$(function(){
 		$.ajax({
 			url: 'hello_api',
@@ -83,7 +83,7 @@
 
 	// 2. 
 	// serialize() 메소드는 jquery가 가지고 있는 기본기능중 하나로 form의 객체들을 한번에 받을 수가 있다. 
-	$('#btn2').on('click', function(){
+	$(document).on('click', '#btn2', function(){		
 			$.ajax({
 	        url: "serialize",
 	        type: "POST",
@@ -106,5 +106,4 @@
 .subject {
 	font-weight: bold;
 }
-
 </style>

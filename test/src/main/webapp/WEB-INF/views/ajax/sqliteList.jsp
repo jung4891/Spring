@@ -7,6 +7,12 @@
 <title>sqlite CRUD</title>
 </head>
 <body>
-	<a href="createPersonDB">db생성</a>
+	<a href="createPersonDB">db생성</a> <br><br>
+	<a href="insertPersonDB_Page">데이터입력</a> <br><br>
+	
+	
+	
+	<a href="javascript:history.back()">이전페이지로</a>
 </body>
+
 </html>

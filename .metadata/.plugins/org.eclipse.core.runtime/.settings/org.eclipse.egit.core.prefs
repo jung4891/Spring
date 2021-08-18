@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Workspaces\\Spring\\.git;C\:\\Workspaces\\Java\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;C\:\\Workspaces\\Java\\.git;
+GitRepositoriesView.GitDirectories=C\:\\Workspace\\eGov\\.git;C\:\\Workspaces\\Java\\.git;C\:\\Workspace\\Spring\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Workspace\\eGov\\.git;C\:\\Workspaces\\Java\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
