@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Spring</name>
+	<name>Spring</name> 
 	<comment></comment>
 	<projects>
 	</projects>
@@ -8,4 +8,5 @@
 	</buildSpec>
 	<natures>
 	</natures> 
-</projectDescription>  
+</projectDescription>    
+   
